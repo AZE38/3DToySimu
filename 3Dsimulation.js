@@ -947,6 +947,9 @@ function Replay() {
 
         }
         timeNow++
+    }else{
+        //restart the replay at t=0
+        timeNow=0
     }
     controls.update();
     renderer.render(scene, camera);
